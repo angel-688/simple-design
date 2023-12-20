@@ -786,14 +786,10 @@ body::after {
   color: var(--blackColor);
 }
 
-.arrow--prev {
-  rotate: -180deg;
-}
-
 .arrow--prev:not(.arrow--about):not(.arrow--prod):not(.arrow--team) {
-  -webkit-transform: translate(-30%, -100%) rotate(-180deg);
-      -ms-transform: translate(-30%, -100%) rotate(-180deg);
-          transform: translate(-30%, -100%) rotate(-180deg);
+  -webkit-transform: translate(-30%, -100%) rotate(180deg);
+      -ms-transform: translate(-30%, -100%) rotate(180deg);
+          transform: translate(-30%, -100%) rotate(180deg);
 }
 
 .arrow--prev.arrow--prod,
@@ -6558,10 +6554,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .main-block__pagination .swiper-pagination-bullet {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 0.625rem;
-            flex: 0 0 0.625rem;
-    width: 0.625rem;
-    height: 0.625rem;
+        -ms-flex: 0 0 0.9375rem;
+            flex: 0 0 0.9375rem;
+    width: 0.9375rem;
+    height: 1.5625rem;
     border-radius: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
